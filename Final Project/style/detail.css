@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 6fr 1fr;
+  min-height: 400px;
+}
+
+.detail .style {
+  margin-top: 195px;
+  float: right;
+}
+
+.detail .product {
+}
+
+.detail .product .ractangle1 {
+  background: #f3f3f4;
+  width: 365px;
+  height: 428px;
+  margin: 50px;
+  border-radius: 10px;
+  float: right;
+  display: grid;
+  align-self: center;
+  padding: 30px;
+}
+
+.detail .product .ractangle1 img {
+  padding: 20% 0%;
+  width: 100%;
+}
+
+.detail .description {
+}
+
+.detail .description .ractangle2 {
+  background: #f3f3f4;
+  width: 685px;
+  height: 428px;
+  margin: 50px 50px 0px 50px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.detail .description .ractangle2 .name {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.detail .description .ractangle2 p {
+  text-align: justify;
+}
+
+.detail .description .ractangle2 button {
+  border: none;
+  border-radius: 4px;
+  width: 70px;
+  height: 30px;
+  background: orange;
+  font-size: 17px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.detail .description button {
+  border: none;
+  padding: 0px 3px;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 17px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.detail .description .pesan {
+  margin-left: 50px;
+  width: 70px;
+  background: #e34d4c;
+}
+.detail .description .add {
+  margin-left: 30px;
+  width: 120px;
+  background: orange;
+}
