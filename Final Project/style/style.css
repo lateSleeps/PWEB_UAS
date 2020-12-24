@@ -203,6 +203,15 @@
   background-color: transparent;
 }
 
+.top .selers .card .ractangle a {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+}
 .top .selers .miroles {
   background: yellowgreen;
 }

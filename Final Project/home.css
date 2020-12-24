@@ -2,56 +2,155 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Space Grotesk", sans-serif;
 }
 
-.wrapper {
-  padding: 0px 0px 0px 80px;
-  display: grid;
-  grid-template-columns: 20% 50% 30%;
-  min-height: 100px auto;
-  background: aqua;
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-
-.logo {
+img {
+  width: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: zoom-out 3s linear infinite;
 }
-
-.logo img {
-  padding-left: 20px;
-  width: 40%;
+@keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
 }
-
-.nav {
-  min-height: 200px auto;
-  background: #444343;
-  height: 100%;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 120px;
-}
-
-.nav-links li a {
+.text-box {
+  width: 600px;
+  position: absolute;
+  top: 260px;
+  left: 100px;
+  text-align: justify;
   color: whitesmoke;
-  text-decoration: none;
-  font-size: 18px;
+  animation: textup 12s linear infinite;
+  transform: translateY(100px);
 }
-
-.icon {
-  background: #444343;
-  padding-top: 30px;
-  padding-left: 50px;
-  opacity: 80%;
-  height: 100%;
+.text-box h1 {
+  margin-bottom: 40px;
 }
-
-.icon img {
-  width: 8%;
-  margin-left: 50px;
-  font-size: 18px;
+.text-box p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 80px;
+}
+.text-box span {
+  background: red;
+  height: 3px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+}
+.banner1 {
+  animation: slide1 12s linear infinite;
+}
+.banner2 {
+  animation: slide2 12s linear infinite;
+}
+.banner3 {
+  animation: slide3 12s linear infinite;
+}
+.banner4 {
+  animation: slide4 12s linear infinite;
+}
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  59% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  59% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  59% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide4 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  59% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes textup {
+  10% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.text-box1 {
+  animation-delay: 0s;
+}
+.text-box1 {
+  animation-delay: 3s;
+}
+.text-box1 {
+  animation-delay: 6s;
+}
+.text-box1 {
+  animation-delay: 9s;
 }

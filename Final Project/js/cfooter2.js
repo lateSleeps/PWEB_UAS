@@ -31,6 +31,10 @@ class MyFooter2 extends HTMLElement {
         text-align: justify;
         }
 
+        .description .container h3{
+          
+        } 
+
         .description .container img {
         width: 60%;
         }
@@ -54,14 +58,12 @@ class MyFooter2 extends HTMLElement {
         <div class="container">
           <img src="../assets/logo 3.png" alt="">
         </div>
-        <div class="container"></div>
-        <div class="container"></div>
+        <div class="container"><h3><br/><br/><br/>BUSINES HOURS</h3></div>
+        <div class="container"><h3><br/><br/><br/>HUBUNGI KAMI</h3></div>
         <div class="container">
           <p>Rental camera Yogyakarta jasa pelayanan sewa Camera termurah dan Terpercaya,siap melayani anda 24 jam demi kepuasan pelanggan.</p>
         </div>
         <div class="container">
-          <h3>BUSINES HOURS</h3>
-          <br>
           <p>Layanan kami buka selama 24 jam dalam Seminggu. </p>
           <br>
           <br>
@@ -78,8 +80,6 @@ class MyFooter2 extends HTMLElement {
          <h3 class="my-footer">2016-2020 &copy; LateSleeps</h3>
         </div>
         <div class="container">
-          <h3>HUBUNGI KAMI</h3>
-          <br>
           <table>
             <tr>
               <td>Alamat </td>
